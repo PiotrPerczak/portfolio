@@ -1,4 +1,4 @@
-import AI from "../assets/summapp.PNG";
+import AI from "../assets/summapp.png";
 import chat from "../assets/chat.png";
 import por from "../assets/por.png";
 
