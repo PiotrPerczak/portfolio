@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../index.css";
 import "../efect.scss";
 import aa from "../assets/21731.jpg";
-import PDF from "../assets/Resume_Piotr_Perczak.pdf";
+import PDF from "../assets/Resume_Piotr_Perczak_6.pdf";
 import App from "../App";
 
 const navigation = [
@@ -40,9 +40,11 @@ export default function Example() {
                 <path d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
               </svg>
             </a>
-            <p className="mt-1 ml-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-3xl">
-              PPER.dev
-            </p>
+            <a href="/#">
+              <p className="mt-1 ml-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-3xl">
+                PPER.dev
+              </p>
+            </a>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -129,20 +131,13 @@ export default function Example() {
                   {navigation.map((item) => (
                     <a
                       key={item.name}
+                      onClick={() => setMobileMenuOpen(false)}
                       href={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-500 hover hover:bg-gray-700"
                     >
                       {item.name}
                     </a>
                   ))}
-                </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-500 hover hover:bg-gray-700"
-                  >
-                    Resume
-                  </a>
                 </div>
               </div>
             </div>
@@ -220,7 +215,6 @@ export default function Example() {
             }}
           />
         </div>
-        
       </div>
     </div>
   );

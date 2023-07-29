@@ -1,7 +1,10 @@
 export default function Example1() {
   return (
     <section>
-      <div id="about" className=" max-w-screen-4xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+      <div
+        id="about"
+        className=" max-w-screen-4xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
+      >
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:ml-20 lg:items-center lg:gap-x-24">
           <div className="mx-auto max-w-4xl text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
             <h2 className="text-3xl flex text-left lg:ml-40 font-bold tracking-tight sm:text-4xl text-gray-300">
@@ -17,43 +20,46 @@ export default function Example1() {
                 />
               </svg>
             </h2>
-            <p className="mt-4 text-lg leading-8 text-gray-400 text-left lg:ml-40 w-auto">
-              I{"'"}m a passionate and motivated Front-End Junior Developer.
-              With a keen eye for detail and a strong desire to create visually
-              appealing and user-friendly websites. I have a solid foundation in
-              HTML, CSS, and JavaScript, and I{"'"}m constantly expanding my
-              skill set to stay up-to-date with the latest front-end
-              technologies and best practices.
-            </p>
-
-            <a
-              href="https://www.linkedin.com/in/piotr-perczak-b95078283/"
-              className="mt-8 2xl:ml-1 inline-block grid-1 bg-transparent"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="80"
-                height="60"
-                viewBox="0 0 24 24"
-                className="svgh 2xl:ml-8 transition-all "
-              >
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037c-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85c3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065a2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </a>
-            <a
-              href="https://github.com/PiotrPerczak"
-              className="mt-8 2xl:mr-96 grid-1 inline-block bg-transparent"
-            >
-              <svg
-                className="svgh transition-all"
-                xmlns="http://www.w3.org/2000/svg"
-                width="80"
-                height="60"
-                viewBox="0 0 24 24 "
-              >
-                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
-              </svg>
-            </a>
+            <div className="items-center align-items flex flex-col">
+              <p className="mt-4 text-lg leading-8 text-gray-400 text-left lg:ml-40 w-auto">
+                I{"'"}m a passionate and motivated Front-End Junior Developer.
+                With a keen eye for detail and a strong desire to create
+                visually appealing and user-friendly websites. I have a solid
+                foundation in HTML, CSS, and JavaScript, and I{"'"}m constantly
+                expanding my skill set to stay up-to-date with the latest
+                front-end technologies and best practices.
+              </p>
+              <div className="flex mt-2 ">
+                <a
+                  href="https://www.linkedin.com/in/piotr-perczak-b95078283/"
+                  className=" bg-transparent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    className="svgh 2xl:ml-8 transition-all "
+                  >
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037c-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85c3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065a2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/PiotrPerczak"
+                  className=" bg-transparent"
+                >
+                  <svg
+                    className="svgh transition-all"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="60"
+                    viewBox="0 0 24 24 "
+                  >
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-1 sm:grid-cols-3 ">
@@ -180,44 +186,16 @@ export default function Example1() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="130"
                   height="76"
-                  viewBox="0 0 32 32"
+                  viewBox="0 0 24 24"
                 >
                   <path
-                    fill="#ffc24a"
-                    d="m5.8 24.6l.17-.237l8.02-15.214l.017-.161l-3.535-6.64a.656.656 0 0 0-1.227.207Z"
-                  />
-                  <path
-                    fill="#ffa712"
-                    d="m5.9 24.42l.128-.25l7.937-15.056l-3.526-6.666a.6.6 0 0 0-1.133.206Z"
-                  />
-                  <path
-                    fill="#f4bd62"
-                    d="m16.584 14.01l2.632-2.7l-2.633-5.021a.678.678 0 0 0-1.195 0l-1.407 2.682V9.2Z"
-                  />
-                  <path
-                    fill="#ffa50e"
-                    d="m16.537 13.9l2.559-2.62l-2.559-4.88a.589.589 0 0 0-1.074-.047l-1.414 2.729l-.042.139Z"
-                  />
-                  <path
-                    fill="#f6820c"
-                    d="m5.802 24.601l.077-.078l.279-.113l10.26-10.222l.13-.354l-2.559-4.878l-8.187 15.645z"
-                  />
-                  <path
-                    fill="#fde068"
-                    d="m16.912 29.756l9.288-5.179l-2.654-16.331a.635.635 0 0 0-1.075-.346L5.8 24.6l9.233 5.155a1.927 1.927 0 0 0 1.878 0"
-                  />
-                  <path
-                    fill="#fcca3f"
-                    d="M26.115 24.534L23.483 8.326a.557.557 0 0 0-.967-.353L5.9 24.569l9.131 5.1a1.912 1.912 0 0 0 1.863 0Z"
-                  />
-                  <path
-                    fill="#eeab37"
-                    d="M16.912 29.6a1.927 1.927 0 0 1-1.878 0l-9.158-5.078l-.076.078l9.233 5.155a1.927 1.927 0 0 0 1.878 0l9.289-5.178l-.023-.14Z"
+                    fill="currentColor"
+                    d="M24 18.588a1.529 1.529 0 0 1-1.895-.72l-3.45-4.771l-.5-.667l-4.003 5.444a1.466 1.466 0 0 1-1.802.708l5.158-6.92l-4.798-6.251a1.595 1.595 0 0 1 1.9.666l3.576 4.83l3.596-4.81a1.435 1.435 0 0 1 1.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 0 0 0 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27c1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 0 0 2.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 0 1-2.589 3.957a6.272 6.272 0 0 1-7.306-.933a6.575 6.575 0 0 1-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 0 1 0 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278c-2.882-.04-4.944 2.094-5.071 5.264z"
                   />
                 </svg>
               </span>
 
-              <h2 className="font-bold text-gray-300">Firebase</h2>
+              <h2 className="font-bold text-gray-300">Express</h2>
             </a>
             <a className="rounded-xl p-4 shadow-sm text-center">
               <span className="inline-block rounded-lg bg-transparent p-3">
